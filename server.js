@@ -5,8 +5,19 @@ const compression = require("compression");
 
 const PORT = 3000;
 
+
+// let port = process.env.PORT;
+// if (port == null || port == "") {
+//   port = 8000;
+// }
+
+
+
+
 const app = express();
 
+
+// app.listen(port);
 app.use(logger("dev"));
 
 app.use(compression());
